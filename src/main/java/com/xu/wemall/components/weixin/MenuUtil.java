@@ -38,7 +38,7 @@ public class MenuUtil {
         ViewButton btn14 = new ViewButton();
         btn14.setName("Top10");
         btn14.setType("view");
-        btn14.setUrl("https://www.toutiao.com/");
+        btn14.setUrl("https://mp.weixin.qq.com/mp/homepage?__biz=MzU0MzgwODY1NA==&hid=1&sn=29d121fa4b68f29842b918d6adc406fe");
 
         ViewButton btn21 = new ViewButton();
         btn21.setName("经典回顾");
