@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<body>
+<style type="text/css">
+    table.gridtable {
+        font-family: verdana,arial,sans-serif;
+        font-size:11px;
+        color:#333333;
+        border-width: 1px;
+        border-color: #666666;
+        border-collapse: collapse;
+    }
+    table.gridtable th {
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #666666;
+        background-color: #dedede;
+    }
+    table.gridtable td {
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #666666;
+        background-color: #ffffff;
+    }
+</style>
+
+<table class="gridtable">
+    <tr>
+        <th width="100"> 属性</th>
+        <th width="100"> 值</th>
+    </tr>
+    <tr>
+        <td>昵称</td>
+        <td th:text="${user.nickname}"></td>
+    </tr>
+    <tr>
+        <td>头像</td>
+        <td><img th:src="${user.headimgurl}"/></td>
+    </tr>
+
+
+</table>
+</body>
+</html>

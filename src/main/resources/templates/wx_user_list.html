@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <title></title>
+</head>
+<body>
+<a th:href="@{/intoAdd}">添加</a>
+<table>
+    <thead>
+    <tr>
+        <th>id</th>
+        <th>username</th>
+        <th>headimgurl</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="user : ${list}">
+        <td th:text="${user.id}"></td>
+        <td th:text="${user.nickname}"></td>
+        <td><img th:src="${user.headimgurl}"/></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
